@@ -257,7 +257,7 @@ button.cta:hover {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: #9500ff6f;
+    background-color: #ffffff;
     overflow: hidden;
     transition: all 0.3s;
 }
@@ -277,7 +277,7 @@ button.cta:hover {
     display: block;
     transition: transition all 0.3s ease 0s;
     font-weight: 700;
-    color: #e2f1f8;
+    color: #711def;
 }
 
 
@@ -666,3 +666,7 @@ button.cta:hover {
     align-items: center;
     background-color: #ffffff;
 }
+
+
+/* TARJETAS */
+
