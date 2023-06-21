@@ -714,13 +714,15 @@ footer {
 
   .footer-menu a:hover{
     color: #ffbc0e;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
+    
   }
 
-  .social-media a:hover{
+.social-media a:hover{
     color: #ffbc0e;
-    transform: translateY(-5px);
+    transform: translateY(0, -5px);
     transition: 0.5s ease;
+    
   }
   
 @media (max-width: 650px) {
