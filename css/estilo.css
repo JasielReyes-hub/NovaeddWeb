@@ -533,6 +533,7 @@ button.cta:hover {
     border-radius: 15px;
 }
 
+
 .img-card{
     background-color: #711def;
     height: 170px;
@@ -567,7 +568,7 @@ button.cta:hover {
 
 .card a{
     background-color: #711def;
-    color: #ffbc0e;
+    color: #fff;
     padding: 15px 20px;
     display: block;
     text-align: center;
@@ -580,9 +581,15 @@ button.cta:hover {
 
 .card:hover{
     background-color: #711def;
-    color: #ffbc0e;
+    color: #fff;
     transform: scale(1.03);
     transition: all 1s ease;
+}
+
+.card a:hover{
+    background-color: #fff;
+    color: #711def;
+    transition: 0.5s ease-in-out;
 }
 
 
@@ -671,7 +678,7 @@ button.cta:hover {
 /* FOOTER */
 
 footer {
-    background-color: #853df1;
+    background-color: #7c2df2;
     padding: 20px;
   }
   
@@ -739,6 +746,14 @@ footer {
     width: 120px;
   }
 
+}
+
+
+@media (max-width: 425px){
+    .footer-menu li{
+        font-size: 8px;
+        margin-right: 5px;
+    }
 }
   
   
