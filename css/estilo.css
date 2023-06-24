@@ -87,6 +87,7 @@ button.cta {
     0 15px 12px rgba(0, 0, 0, 0.08);
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    margin-left: 10px;
 }
 
 
@@ -107,13 +108,24 @@ button.cta:hover {
     header,
     .left,
     .right {
-        padding-left: 40px;
+        padding-left: 50px;
         padding-right: 40px;
+    }
+
+    button.cta{
+        margin-bottom: 20px;
     }
     
 }
 
-@media (max-width: 650px) {
+
+@media (max-width:900px){
+    button.cta{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 700px) {
 
     .main {
         flex-direction:column;
@@ -141,6 +153,7 @@ button.cta:hover {
 
     button.cta {
         max-width: 80%;
+        margin: 20px;
     }
 
     .right img {
