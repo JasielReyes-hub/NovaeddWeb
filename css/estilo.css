@@ -109,6 +109,7 @@ button.cta i {
       display: none;
     }
   }
+
   
 
 
@@ -168,7 +169,7 @@ button.cta i {
     }
 
     .right img {
-        width: 90%;
+        width: 60%;
     }
 }
 
@@ -540,6 +541,11 @@ button.cta i {
 .container2 .forma:hover .shape .content22{
     opacity: 1;
 }
+
+
+
+  
+  
 
 /* BURBUJAS FIN */
 
