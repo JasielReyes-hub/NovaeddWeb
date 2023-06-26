@@ -87,7 +87,7 @@ button.cta {
     0 15px 12px rgba(0, 0, 0, 0.08);
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 
@@ -99,6 +99,17 @@ button.cta:hover {
     transition: 0.5s;
     transform: scale(1.1);
 }
+
+button.cta i {
+    margin-right: 5px;
+  }
+
+  @media screen and (max-width: 700px) {
+    button.cta i {
+      display: none;
+    }
+  }
+  
 
 
 
