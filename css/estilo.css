@@ -257,7 +257,7 @@ button.cta i {
 }
 
 
-@media screen and (max-width: 1333px) {
+@media screen and (max-width: 1368px) {
     .nav-links, .btn{
         display: none;
     }
@@ -267,6 +267,8 @@ button.cta i {
 
     
 }
+
+
 
 /* JS NAV */
 

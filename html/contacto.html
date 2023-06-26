@@ -118,38 +118,44 @@
     </style>
       
    
-        <div class="formulario-container">
-            <form name="formulario-contacto" method="post">
-                <label for="nombre" class="">Nombre: </label>
-                <input type="text" name="nombre" id="nombre">
-                <br>
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email">
-                <br>
-                <label for="telefono">Teléfono interesado:</label>
-                <input type="text" name="telefono" id="telefono">
-                <br>
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Indique cuál es el motivo de su comunicación con nosotros."></textarea>
-                <br>
-                <input id="enviarCorreo" type="submit" value="Enviar">
-            </form>
-        </div> 
-       
-   
-
+      <div class="formulario-container">
+        <form name="formulario-contacto" method="post">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <br>
+            <label for="telefono">Teléfono interesado:</label>
+            <input type="text" name="telefono" id="telefono">
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Indique cuál es el motivo de su comunicación con nosotros."></textarea>
+            <br>
+            <input id="enviarCorreo" type="submit" value="Enviar">
+        </form>
+    </div>
+    
     <script>
         const btnEnvio = document.getElementById('enviarCorreo');
-
+    
         btnEnvio.addEventListener('click', function (e) {
             e.preventDefault();
+            
             const email = document.getElementById('email').value;
             const nombre = document.getElementById('nombre').value;
             const mensaje = document.getElementById('mensaje').value;
             const telefono = document.getElementById('telefono').value;
+            
+            if (email === '' || nombre === '' || mensaje === '' || telefono === '') {
+                alert('Por favor, complete todos los campos para poder continuar.');
+                return;
+            }
+    
             window.location.href = `mailto:leonartdreyes11@gmail.com?subject=Correo Formulario Novaedd Web&body=Nombre%3A${nombre}%0AEmail%3A${email}%0ATelefono%3A${telefono}%0AMensjae%3A${mensaje}`;
         });
     </script>
+    
 
     <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 230" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(113, 29, 239, 1)" offset="0%"></stop><stop stop-color="rgba(174, 120, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,184L60,157.2C120,130,240,77,360,69C480,61,600,100,720,126.5C840,153,960,169,1080,157.2C1200,146,1320,107,1440,92C1560,77,1680,84,1800,107.3C1920,130,2040,169,2160,161C2280,153,2400,100,2520,65.2C2640,31,2760,15,2880,15.3C3000,15,3120,31,3240,57.5C3360,84,3480,123,3600,130.3C3720,138,3840,115,3960,92C4080,69,4200,46,4320,34.5C4440,23,4560,23,4680,26.8C4800,31,4920,38,5040,38.3C5160,38,5280,31,5400,26.8C5520,23,5640,23,5760,53.7C5880,84,6000,146,6120,168.7C6240,192,6360,176,6480,149.5C6600,123,6720,84,6840,61.3C6960,38,7080,31,7200,46C7320,61,7440,100,7560,103.5C7680,107,7800,77,7920,80.5C8040,84,8160,123,8280,149.5C8400,176,8520,192,8580,199.3L8640,207L8640,230L8580,230C8520,230,8400,230,8280,230C8160,230,8040,230,7920,230C7800,230,7680,230,7560,230C7440,230,7320,230,7200,230C7080,230,6960,230,6840,230C6720,230,6600,230,6480,230C6360,230,6240,230,6120,230C6000,230,5880,230,5760,230C5640,230,5520,230,5400,230C5280,230,5160,230,5040,230C4920,230,4800,230,4680,230C4560,230,4440,230,4320,230C4200,230,4080,230,3960,230C3840,230,3720,230,3600,230C3480,230,3360,230,3240,230C3120,230,3000,230,2880,230C2760,230,2640,230,2520,230C2400,230,2280,230,2160,230C2040,230,1920,230,1800,230C1680,230,1560,230,1440,230C1320,230,1200,230,1080,230C960,230,840,230,720,230C600,230,480,230,360,230C240,230,120,230,60,230L0,230Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(113, 29, 239, 1)" offset="0%"></stop><stop stop-color="rgba(174, 120, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,23L60,34.5C120,46,240,69,360,95.8C480,123,600,153,720,153.3C840,153,960,123,1080,115C1200,107,1320,123,1440,138C1560,153,1680,169,1800,164.8C1920,161,2040,138,2160,111.2C2280,84,2400,54,2520,38.3C2640,23,2760,23,2880,30.7C3000,38,3120,54,3240,76.7C3360,100,3480,130,3600,153.3C3720,176,3840,192,3960,168.7C4080,146,4200,84,4320,61.3C4440,38,4560,54,4680,57.5C4800,61,4920,54,5040,57.5C5160,61,5280,77,5400,92C5520,107,5640,123,5760,107.3C5880,92,6000,46,6120,26.8C6240,8,6360,15,6480,30.7C6600,46,6720,69,6840,76.7C6960,84,7080,77,7200,92C7320,107,7440,146,7560,141.8C7680,138,7800,92,7920,76.7C8040,61,8160,77,8280,84.3C8400,92,8520,92,8580,92L8640,92L8640,230L8580,230C8520,230,8400,230,8280,230C8160,230,8040,230,7920,230C7800,230,7680,230,7560,230C7440,230,7320,230,7200,230C7080,230,6960,230,6840,230C6720,230,6600,230,6480,230C6360,230,6240,230,6120,230C6000,230,5880,230,5760,230C5640,230,5520,230,5400,230C5280,230,5160,230,5040,230C4920,230,4800,230,4680,230C4560,230,4440,230,4320,230C4200,230,4080,230,3960,230C3840,230,3720,230,3600,230C3480,230,3360,230,3240,230C3120,230,3000,230,2880,230C2760,230,2640,230,2520,230C2400,230,2280,230,2160,230C2040,230,1920,230,1800,230C1680,230,1560,230,1440,230C1320,230,1200,230,1080,230C960,230,840,230,720,230C600,230,480,230,360,230C240,230,120,230,60,230L0,230Z"></path></svg>
     <footer>
