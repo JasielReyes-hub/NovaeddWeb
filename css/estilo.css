@@ -22,11 +22,6 @@ h1{
     
 }
 
-.title1{
-    text-align: center;
-
-}
-
 
 /* LANDING INICIO */
 
@@ -56,7 +51,7 @@ h1{
 .title {
     color:#711def;
     font-size: 3.2em;
-    width: 50%;
+    width: 55%;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 48px;
