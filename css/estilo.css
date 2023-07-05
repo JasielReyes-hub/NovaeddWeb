@@ -869,6 +869,7 @@ footer {
     text-decoration: none;
     border-radius: 30px;
     transition: all 0.3s ease 0.2s;
+    font-weight: 600;
   }
   
   .service .btn:hover {
