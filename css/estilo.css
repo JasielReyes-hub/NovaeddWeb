@@ -864,7 +864,7 @@ footer {
   .service .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4caf50;
+    background-color: #711def;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -872,7 +872,8 @@ footer {
   }
   
   .service .btn:hover {
-    background-color: #45a049;
+    background-color: #ffbc0e;
+    color: #7c2df2;
   }
   
   @media (max-width: 768px) {
