@@ -120,16 +120,16 @@
    
       <div class="formulario-container">
         <form name="formulario-contacto" method="post">
-            <label for="nombre">Nombre: </label>
+            <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre">
             <br>
-            <label for="email">Email:</label>
+            <label for="email">Email</label>
             <input type="text" name="email" id="email">
             <br>
-            <label for="telefono">Teléfono interesado:</label>
+            <label for="telefono">Teléfono interesado</label>
             <input type="text" name="telefono" id="telefono">
             <br>
-            <label for="mensaje">Mensaje:</label>
+            <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Indique cuál es el motivo de su comunicación con nosotros."></textarea>
             <br>
             <input id="enviarCorreo" type="submit" value="Enviar">
@@ -146,13 +146,16 @@
             const nombre = document.getElementById('nombre').value;
             const mensaje = document.getElementById('mensaje').value;
             const telefono = document.getElementById('telefono').value;
-            
+
+
             if (email === '' || nombre === '' || mensaje === '' || telefono === '') {
                 alert('Por favor, complete todos los campos para poder continuar.');
                 return;
             }
+
+            
     
-            window.location.href = `mailto:leonartdreyes11@gmail.com?subject=Correo Formulario Novaedd Web&body=Nombre%3A${nombre}%0AEmail%3A${email}%0ATelefono%3A${telefono}%0AMensjae%3A${mensaje}`;
+            window.location.href = `mailto:taerecargate@gmail.com?subject=Correo Formulario Novaedd Web&body=Nombre: ${nombre}%0AEmail: ${email}%0ATelefono: ${telefono}%0AMensaje: ${mensaje}`;
         });
     </script>
     
