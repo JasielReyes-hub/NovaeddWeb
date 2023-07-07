@@ -299,7 +299,7 @@ button.cta i {
     padding: 15px;
     font-size: 36px;
     display: block;
-    transition: transition all 0.3s ease 0s;
+    transition:  all 0.3s ease 0.2s;
     font-weight: 700;
     color: #711def;
 }
