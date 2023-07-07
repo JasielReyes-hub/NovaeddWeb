@@ -209,6 +209,7 @@ button.cta i {
     display: inline-block;
     margin-top: 20px;
     padding: 0 20px;    
+    transition: all 0.3s ease 0.2s;
 }
 
 .header .nav-links li:hover,
@@ -222,6 +223,7 @@ button.cta i {
     color: #711def;
     text-decoration: none;    
     font-weight: 600;
+    
     
 }
 
@@ -560,6 +562,7 @@ button.cta i {
     width: 370px;
     margin: 50px;
     border-radius: 15px;
+    transition: all 0.3s ease 0.2s;
 }
 
 
@@ -605,6 +608,8 @@ button.cta i {
     border-radius: 30px;
     font-weight: 600;
     text-decoration: none;
+    transition: all 0.3s ease 0.2s;
+    
 }
 
 
