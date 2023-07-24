@@ -833,6 +833,20 @@ footer {
     }
   }
 
+  @media screen and (max-width: 1080px) {
+    #scrollToTopBtn {
+      bottom: 70px;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 650px){
+    #scrollToTopBtn{
+        bottom: 10px;
+    }
+  }
+    
+
 
 
 
