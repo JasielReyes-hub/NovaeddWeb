@@ -73,7 +73,7 @@ button.cta {
     border: none;
     outline: none;
     background-color: #711def;
-    color: #ffbc0e;
+    color: #f2f2f2;
     padding: 18px 32px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -89,7 +89,7 @@ button.cta {
 
 
 button.cta:hover {
-    background-color: #ffbc0e;
+    background-color: #dddddd;
     color: #711def;
     opacity: 0.9;
     transition: 0.5s;
@@ -181,7 +181,7 @@ button.cta i {
     justify-content: space-between;
     align-items: center;
     height: 85px;
-    padding: 5px 10%;
+    padding: 20px 10%;
     border-color: #1b3039;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.293);
     border-radius: 50px;
@@ -207,8 +207,8 @@ button.cta i {
 
 .header .nav-links li{
     display: inline-block;
-    margin-top: 20px;
-    padding: 0 20px;    
+    margin-top: 25px;
+    padding: 0 5px;    
     transition: all 0.3s ease 0.2s;
 }
 
@@ -216,19 +216,42 @@ button.cta i {
 .overlay a:hover{
     transform: scale(1.1);
     transition: 0.3s;
+    
 }
 
+
+/* Estilos para el enlace (a) en el estado normal */
+.nav-links li a {
+    text-decoration: none;
+    color: #000000; /* Cambia el color del texto aquí si es necesario */
+    padding:  7px;
+    transition: all 0.3s ease 0.2s;
+  }
+  
+  /* Estilos para el enlace (a) en el estado de hover */
+  .nav-links li a:hover {
+    background-color: #711def;
+    color: #dddddd;
+    border-radius: 20px;
+  }
+  
+
+
+
+
 .header .nav-links a{
-    font-size: 20px;
+    font-size: 17px;
     color: #711def;
     text-decoration: none;    
     font-weight: 600;
     
     
+    
 }
 
 .header .nav-links li a:hover{
-    color: #ffbc0e;
+    
+    color: #dddddd;
     transition: all 0.3s ease 0.2s;
 }
 
@@ -239,7 +262,7 @@ button.cta i {
 .header .btn button,
 .header .menu button{
     font-weight: 700;
-    color: #ffbc0e;
+    color: #f2f2f2;
     padding: 9px 25px;
     background: #711def;
     border: none;
@@ -250,8 +273,8 @@ button.cta i {
 
 .header .btn button:hover,
 .header .menu button:hover{
-    background-color: #ffbc0e;
-    color: #711def;
+    background-color: #dddddd;
+    color: #7c2df2;
     transform: scale(1.1);
 }
 
@@ -299,7 +322,7 @@ button.cta i {
 
 .header .overlay a{
     padding: 15px;
-    font-size: 36px;
+    font-size: 20px;
     display: block;
     transition:  all 0.3s ease 0.2s;
     font-weight: 700;
@@ -600,7 +623,7 @@ button.cta i {
 
 .card a{
     background-color: #711def;
-    color: #fff;
+    color: #dddddd;
     padding: 15px 20px;
     display: block;
     text-align: center;
@@ -621,7 +644,7 @@ button.cta i {
 }
 
 .card a:hover{
-    background-color: #fff;
+    background-color: #dddddd;
     color: #711def;
     transition: 0.5s ease-in-out;
 }
@@ -749,7 +772,7 @@ footer {
   }
   
   .social-media a {
-    color: #fff;
+    color: #dddddd;
     margin-right: 10px;
     font-size: 25px;
     transition: all 0.3s ease 0.2s;
@@ -818,7 +841,7 @@ footer {
   }
   
   #scrollToTopBtn:hover {
-    background-color: #ffbc0e;
+    background-color: #dddddd;
     color: #7c2df2;
     transition: 0.5s ease;
   }
