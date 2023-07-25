@@ -29,6 +29,7 @@ h1{
     flex: 1;
     display: flex;
     align-items: center;
+    margin-top: 75px;
 }
 
 
@@ -175,7 +176,7 @@ button.cta i {
 
 /* Nav Bar */
 
-.header{
+.header {
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -185,7 +186,12 @@ button.cta i {
     border-color: #1b3039;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.293);
     border-radius: 50px;
-}
+    position: fixed; /* Agrega la propiedad para que el header sea fijo */
+    top: 0; /* Coloca el header en la parte superior */
+    left: 0; /* Coloca el header en la parte izquierda */
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    z-index: 999; /* Asegura que el header esté encima del contenido */
+  }
 
 .header .logo{
     cursor: pointer;
@@ -657,12 +663,12 @@ button.cta i {
 
 .titulo-conocenos{
     text-align: center;
-    margin: 20px;
     padding: 20px;
     text-transform: uppercase;
     font-weight: 800;
     color: #711def;
-    margin-bottom: 15px;  
+    margin-bottom: 7px;  
+    font-size: 10px;
     
     
 }
@@ -880,6 +886,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-top: 70px;
   }
   
   .service {
@@ -911,7 +918,7 @@ footer {
     display: inline-block;
     padding: 10px 20px;
     background-color: #711def;
-    color: #ffbc0e;
+    color: #dddddd;
     text-decoration: none;
     border-radius: 30px;
     transition: all 0.3s ease 0.2s;
@@ -919,7 +926,7 @@ footer {
   }
   
   .service .btn:hover {
-    background-color: #ffbc0e;
+    background-color: #dddddd;
     color: #7c2df2;
     transform: scale(1.1);
     transition: 0.5s;
@@ -931,6 +938,59 @@ footer {
     }
   }
   
+
+
+  /* ALIADOS INICIO */
+
+  .brands-section {
+    padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .brand-item {
+    width: 150px;
+    margin: 10px;
+    position: relative;
+  }
+  .brand-item img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+  .brand-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  .brand-item .overlay h2 {
+    margin: 5px;
+    font-size: 23px;
+  }
+  .brand-item .overlay p {
+    margin: 5px;
+  }
+  .brand-item:hover img {
+    opacity: 0.7;
+  }
+  .brand-item:hover .overlay {
+    opacity: 1;
+  }
+  /* ALIADOS FIn */
 
  
  
