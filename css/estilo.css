@@ -455,11 +455,16 @@ button.cta i {
         height: 210px;
 
     }
+
+    .slider__container{
+      margin-top: 50px;
+    }
 }
 @media (max-width: 425px){
 
     .slider__container{
         grid-template-columns: 25px 1fr 25px;
+        margin-top: 50px;
     }
 
     .slider__arrow{
@@ -814,13 +819,24 @@ footer {
 }
 
 
-@media (max-width: 425px){
+@media (max-width: 536px){
     .footer-menu li{
-        font-size: 8px;
+        font-size: 3px;
         margin-right: 5px;
     }
 }
-  
+
+@media (max-width: 390px){
+  .footer-menu li{
+      display: none;
+      margin: auto;
+  }
+}
+
+
+
+
+ 
   
 /* BOTON */
 #scrollToTopBtn {
@@ -923,6 +939,7 @@ footer {
     border-radius: 30px;
     transition: all 0.3s ease 0.2s;
     font-weight: 600;
+    margin-left: 12px;
   }
   
   .service .btn:hover {
@@ -937,6 +954,15 @@ footer {
       width: 100%;
     }
   }
+
+  @media (max-width: 425px) {
+    .service .btn {
+      margin-top: 12px;
+      font-size: 15px;
+    }
+  }
+
+
   
 
 
