@@ -377,6 +377,8 @@ button.cta i {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
+    margin-bottom: -50px;
+
 }
 
 .slider{
@@ -498,12 +500,12 @@ button.cta i {
 /* BURBUJAS INICIO */
 
 .container2{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 95px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 95px;
 }
 
 
@@ -511,77 +513,84 @@ button.cta i {
 
 
 .container2 .forma{
-    position: relative;
-    width: 350px;
-    height: 400px;
-    margin: 50px 20px 70px;
-    
+  position: relative;
+  width: 350px;
+  height: 400px;
+  margin: 50px 20px 70px;
+  
 }
 
 .container2 .forma::before{
-    content: '';
-    position: absolute;
-    bottom: -70px;
-    width: 100%;
-    height: 60px;
-    background: radial-gradient(rgba(31, 27, 69, 0.403),transparent,
-    transparent);
-    border-radius: 50%;
-    transition: 0.5s;
-
+  content: '';
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  height: 60px;
+  background: radial-gradient(rgba(31, 27, 69, 0.403),transparent,
+  transparent);
+  border-radius: 50%;
+  transition: 0.5s;
+  
 }
 
 .container2 .forma:hover::before{
-    opacity: 0.8;
-    transform: scale(0.1);
+  opacity: 0.8;
+  transform: scale(0.1);
+  
 }
 
 .container2 .forma .shape{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #711def;
-    clip-path: ellipse(45% 50% at 50% 50%);
-    transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #711def;
+  clip-path: ellipse(45% 50% at 50% 50%);
+  transition: 0.5s;
 }
 
 .container2 .forma:hover .shape{
-    transform: translateY(-30px); 
+  transform: translateY(-30px); 
+  
 }
 
 
 
 .container2 .forma .shape img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container2 .forma .shape .content22{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    background: linear-gradient(45deg, #711def, rgba(0,0,0,0));
-    color: #e2f1f8;
-    opacity: 0;
-    transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(45deg, #711def, rgba(0,0,0,0));
+  color: #e2f1f8;
+  opacity: 0;
+  transition: 0.5s;
+  
 }
 
 .container2 .forma:hover .shape .content22{
-    opacity: 1;
+  opacity: 1;
 }
+
+
+
+
 
 
 
@@ -789,7 +798,7 @@ footer {
   }
   
   .social-media a {
-    color: #dddddd;
+    color: #ffffff;
     margin-right: 10px;
     font-size: 25px;
     transition: all 0.3s ease 0.2s;
@@ -808,6 +817,27 @@ footer {
     
   }
   
+
+  @media (max-width: 900px) {
+    .footer-menu li  a{
+      font-size: 15px;
+      
+    }
+  }
+
+  @media (max-width: 850px) {
+    .container-footer {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-menu{
+      margin: 20px;
+    }
+  }
+
+
+
 @media (max-width: 650px) {
   .container-footer {
     flex-direction: column;
@@ -826,20 +856,43 @@ footer {
 
 
 @media (max-width: 536px){
-    .footer-menu li{
-        font-size: 3px;
-        margin-right: 5px;
+    .footer-menu li {
+        margin-right: 7px;
     }
 }
 
-@media (max-width: 390px){
-  .footer-menu li{
-      display: none;
-      margin: auto;
+
+
+@media (max-width: 484px){
+  .footer-menu li a{
+     font-size: 13px;
+     
   }
 }
 
+@media (max-width: 434px){
+  .footer-menu li a{
+     font-size: 11px;
+     
+  }
+}
 
+@media (max-width: 385px) {
+  .footer-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar los elementos horizontalmente */
+  }
+
+  .footer-menu li {
+    width: 50%; /* Ajustar el ancho de los elementos para dos columnas */
+    text-align: center; /* Centrar el texto dentro de los elementos */
+  }
+
+  .footer-menu li a{
+    font-size: 13px;
+  }
+}
 
 
  
@@ -956,6 +1009,12 @@ footer {
     transition: 0.5s;
   }
   
+  @media (max-width: 1000px) {
+    .service .btn {
+      margin-top: 10px;
+    }
+  }
+
   @media (max-width: 800px) {
     .service {
       width: 100%;
