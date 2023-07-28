@@ -775,7 +775,7 @@ button.cta i {
 
 footer {
     background-color: #7c2df2;
-    padding: 20px;
+    padding: 22px;
   }
   
   .container-footer {
@@ -1001,6 +1001,7 @@ footer {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    
   }
   
   .service .btn {
