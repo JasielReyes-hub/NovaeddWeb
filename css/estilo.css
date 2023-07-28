@@ -191,7 +191,7 @@ button.cta i {
     padding: 20px 10%;
     border-color: #1b3039;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.293);
-    border-radius: 50px;
+    border-radius: 28px;
     position: fixed; /* Agrega la propiedad para que el header sea fijo */
     top: 0; /* Coloca el header en la parte superior */
     left: 0; /* Coloca el header en la parte izquierda */
