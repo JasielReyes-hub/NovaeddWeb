@@ -499,74 +499,80 @@ button.cta i {
 
 /* BURBUJAS INICIO */
 
-.container2{
+.container2 {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 95px;
+  
 }
 
-
-
-
-
-.container2 .forma{
+.forma {
   position: relative;
   width: 350px;
   height: 400px;
   margin: 50px 20px 70px;
-  
+  transform-style: preserve-3d;
+  transform: translateZ(0);
 }
 
-.container2 .forma::before{
+.forma::before {
   content: '';
   position: absolute;
   bottom: -70px;
   width: 100%;
   height: 60px;
-  background: radial-gradient(rgba(31, 27, 69, 0.403),transparent,
-  transparent);
+  background: radial-gradient(rgba(31, 27, 69, 0.403), transparent, transparent);
   border-radius: 50%;
   transition: 0.5s;
   
 }
 
-.container2 .forma:hover::before{
+.forma:hover::before {
   opacity: 0.8;
   transform: scale(0.1);
   
 }
 
-.container2 .forma .shape{
+.forma .shape {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #711def;
   clip-path: ellipse(45% 50% at 50% 50%);
   transition: 0.5s;
-}
-
-.container2 .forma:hover .shape{
-  transform: translateY(-30px); 
   
 }
 
+.forma:hover .shape {
+  transform: translateY(-30px);
+}
+
+@media (max-width: 900px) {
+  .forma:hover .shape{
+    transform: translateY(0px);    
+  }
+}
+ 
 
 
-.container2 .forma .shape img{
+
+.forma .shape img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  clip-path: ellipse(45% 50% at 50% 50%);
+   /* Mantener la forma de elipse */
 }
 
-.container2 .forma .shape .content22{
+.forma .content22 {
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -577,27 +583,34 @@ button.cta i {
   align-items: center;
   padding: 20px;
   text-align: center;
-  background: linear-gradient(45deg, #711def, rgba(0,0,0,0));
+  background-color: rgba(113, 29, 239, 0.49);
+  backdrop-filter: blur(5px);
   color: #e2f1f8;
   opacity: 0;
   transition: 0.5s;
-  
 }
 
-.container2 .forma:hover .shape .content22{
+.forma:hover .content22 {
   opacity: 1;
 }
 
-
-
-
-
-
-
+.message {
+  text-align: center;
+  margin-top: 480px; /* Ajustamos el margen inferior para separar del contenido */
+  color: #711def;
+  letter-spacing: 2px;
   
-  
+}
+
+
+
+
 
 /* BURBUJAS FIN */
+
+
+
+
 
 /* CARDS INICIO */
 .container3{
