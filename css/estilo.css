@@ -428,8 +428,8 @@ button.cta i {
 }
 
 .slider__img{
-    width: 230px;
-    height: 230px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
@@ -460,8 +460,8 @@ button.cta i {
     }
 
     .slider__img{
-        width: 210px;
-        height: 210px;
+        width: 310px;
+        height: 310px;
 
     }
 
@@ -494,6 +494,10 @@ button.cta i {
     .slider__review{
         font-size: 1rem;
         line-height: 1.6;
+    }
+
+    .slider__arrow{
+      width: 90%;
     }
 }
 
