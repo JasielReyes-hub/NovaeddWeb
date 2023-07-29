@@ -423,7 +423,8 @@ button.cta i {
 .slider__review{
     font-weight: 300;
     font-size: 20px;
-    line-height: 1.7;
+    line-height: 1.5;
+    
 }
 
 .slider__img{
@@ -437,7 +438,7 @@ button.cta i {
   
 .slider__arrow{
     cursor: pointer;
-    width: 90%;
+    width: 80%;
 }
 
 .slider__arrow:nth-of-type(2){
@@ -1080,7 +1081,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(17, 0, 127, 0.7);
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -1091,7 +1092,7 @@ footer {
     text-align: center;
     border-radius: 10px;
     pointer-events: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 1.2s ease;
   }
   .brand-item .overlay h2 {
     margin: 5px;
