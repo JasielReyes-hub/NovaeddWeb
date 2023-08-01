@@ -1003,11 +1003,12 @@ footer {
   }
   
   .service img {
-    max-width: 100%;
+    max-width: 50%; /* Cambié el 50% a 100% para que la imagen ocupe todo el ancho disponible */
     height: auto;
     margin-bottom: 20px;
-    
-  }
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen usando margen automático */
+}
   
   .service .btn {
     display: inline-block;
