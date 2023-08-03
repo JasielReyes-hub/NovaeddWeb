@@ -35,16 +35,16 @@ h1{
 
 
 .right img {
-    width: 80%;
+    width: 85%;
 }
 
 .left {
     max-width: 55%;
-    padding: 30px 64px;
+    padding: 45px 74px;
 }
 
 .right {
-    padding: 40px 48px;
+    padding: 40px 28px;
     margin: 20px;
     
 }
@@ -52,9 +52,9 @@ h1{
 .title {
     color:#711def;
     font-size: 3.2em;
-    width: 55%;
+    width: 75%;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-bottom: 48px;
 }
 
@@ -134,10 +134,13 @@ button.cta i {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 980px) {
 
     .main {
         flex-direction:column;
+    }
+    button.cta i {
+      display: none;
     }
 
     .left,
@@ -424,6 +427,7 @@ button.cta i {
     font-weight: 300;
     font-size: 20px;
     line-height: 1.5;
+    text-align: justify;
     
 }
 
@@ -469,7 +473,7 @@ button.cta i {
       margin-top: 50px;
     }
 }
-@media (max-width: 425px){
+@media (max-width: 500px){
 
     .slider__container{
         grid-template-columns: 25px 1fr 25px;
@@ -481,8 +485,8 @@ button.cta i {
     }
 
     .slider__img{
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
 
     }
 
@@ -873,29 +877,7 @@ footer {
 }
 
 
-@media (max-width: 536px){
-    .footer-menu li {
-        margin-right: 7px;
-    }
-}
-
-
-
-@media (max-width: 484px){
-  .footer-menu li a{
-     font-size: 13px;
-     
-  }
-}
-
-@media (max-width: 434px){
-  .footer-menu li a{
-     font-size: 11px;
-     
-  }
-}
-
-@media (max-width: 385px) {
+@media (max-width: 536px) {
   .footer-menu ul {
     display: flex;
     flex-wrap: wrap;
@@ -908,7 +890,7 @@ footer {
   }
 
   .footer-menu li a{
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -995,15 +977,21 @@ footer {
   .service h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    font-weight: 600;
   }
   
   .service p {
     font-size: 16px;
     margin-bottom: 20px;
   }
+
+  .service a{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
   
   .service img {
-    max-width: 50%; /* Cambié el 50% a 100% para que la imagen ocupe todo el ancho disponible */
+    max-width: 100%; /* Cambié el 50% a 100% para que la imagen ocupe todo el ancho disponible */
     height: auto;
     margin-bottom: 20px;
     display: block; /* Asegura que la imagen se comporte como un bloque */
