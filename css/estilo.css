@@ -608,7 +608,6 @@ button.cta i {
   margin-top: 480px; /* Ajustamos el margen inferior para separar del contenido */
   color: #711def;
   letter-spacing: 2px;
-  
 }
 
 
@@ -1100,6 +1099,8 @@ footer {
   .brand-item:hover .overlay {
     opacity: 1;
   }
+
+  
   /* ALIADOS FIn */
 
  
