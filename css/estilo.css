@@ -1095,7 +1095,7 @@ footer {
     text-align: center;
     border-radius: 10px;
     pointer-events: none;
-    transition: opacity 1.2s ease;
+    transition: opacity 0.8s ease;
   }
   .brand-item .overlay h2 {
     margin: 5px;
