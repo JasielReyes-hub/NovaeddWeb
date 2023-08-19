@@ -146,47 +146,51 @@
     </style>
 
 
-    <div class="formulario-container">
-      <form name="formulario-contacto" method="post">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Coloque su nombre completo">
-        <br>
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" placeholder="Coloque su correo ">
-        <br>
-        <label for="telefono">Teléfono interesado</label>
-        <input type="text" name="telefono" id="telefono" placeholder="Coloque su teléfono">
-        <br>
-        <label for="mensaje">Mensaje</label>
-        <textarea id="dynamic-textarea" name="mensaje" id="mensaje" cols="30" rows="10"
-          placeholder="Indique cuál es el motivo de su comunicación con nosotros."></textarea>
-        <br>
-        <input id="enviarCorreo" type="submit" value="Enviar">
-      </form>
-    </div>
+<div class="formulario-container">
+  <form name="formulario-contacto" method="post">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Coloque su nombre completo">
+    <br>
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" placeholder="Coloque su correo ">
+    <br>
+    <label for="telefono">Teléfono interesado</label>
+    <input type="text" name="telefono" id="telefono" placeholder="Coloque su teléfono">
+    <br>
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Indique cuál es el motivo de su comunicación con nosotros."></textarea>
+    <br>
+    <input id="enviarCorreo" type="submit" value="Enviar">
+  </form>
+</div>
 
     <script>
-      const btnEnvio = document.getElementById('enviarCorreo');
-
-      btnEnvio.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        const email = document.getElementById('email').value;
-        const nombre = document.getElementById('nombre').value;
-        const mensaje = document.getElementById('mensaje').value;
-        const telefono = document.getElementById('telefono').value;
-
-
-        if (email === '' || nombre === '' || mensaje === '' || telefono === '') {
-          alert('Por favor, complete todos los campos para poder continuar.');
-          return;
-        }
-
-
-
-        window.location.href = `mailto:taerecargate@gmail.com?subject=Correo Formulario Novaedd Web&body=Nombre: ${nombre}%0AEmail: ${email}%0ATelefono: ${telefono}%0AMensaje: ${mensaje}`;
+      document.addEventListener('DOMContentLoaded', function() {
+        const btnEnvio = document.getElementById('enviarCorreo');
+      
+        btnEnvio.addEventListener('click', function (e) {
+          e.preventDefault();
+      
+          const emailElement = document.getElementById('email');
+          const nombreElement = document.getElementById('nombre');
+          const mensajeElement = document.getElementById('mensaje');
+          const telefonoElement = document.getElementById('telefono');
+      
+          const email = emailElement ? emailElement.value : '';
+          const nombre = nombreElement ? nombreElement.value : '';
+          const mensaje = mensajeElement ? mensajeElement.value : '';
+          const telefono = telefonoElement ? telefonoElement.value : '';
+      
+          if (email === '' || nombre === '' || mensaje === '' || telefono === '') {
+            alert('Por favor, complete todos los campos para poder continuar.');
+            return;
+          }
+      
+          const mailtoLink = `mailto:taerecargate@gmail.com?subject=Correo Formulario Novaedd Web&body=Nombre: ${nombre}%0AEmail: ${email}%0ATelefono: ${telefono}%0AMensaje: ${mensaje}`;
+          window.location.href = mailtoLink;
+        });
       });
-    </script>
+      </script>
 
 
 
